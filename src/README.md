@@ -10,6 +10,37 @@
     - [LEPR-DevStack](https://github.com/PlanetDebug/LEPR-Stack)
 2. Copy or clone this repository into the `src` folder.
 
+# .env
+
+You will need to add the following information to the `.env` within the src project root.
+
+- APP_NAME=Lumen
+- APP_ENV=local
+- APP_KEY=generatedKey
+- APP_DEBUG=true
+- APP_URL=http://localhost
+- APP_TIMEZONE=UTC
+
+- LOG_CHANNEL=stack
+- LOG_SLACK_WEBHOOK_URL=
+
+- DB_CONNECTION=postgres
+- DB_HOST=postgres
+- DB_PORT=5432
+- DB_DATABASE=app_db
+- DB_USERNAME=username
+- DB_PASSWORD=password
+
+- CACHE_DRIVER=file
+- QUEUE_CONNECTION=sync
+
+The username and password are those which you used in the `.env` for the docker configuration.
+You will need to manually generate an API key.
+
+# Generating API keys
+
+You will want to generate an API key of a 32 character length. To do this there are online tools available, unlike Laravel Lumen is lightweight and does not contain the tools to do this I would recommend using one of the following sites: 
+- [RandomStringGenerator](http://www.unit-conversion.info/texttools/random-string-generator/)
 ## Project Steps
 
 1. Created Dockerfile for php - this enables the install and enable of specific tools: vi, pdo, xdebug
