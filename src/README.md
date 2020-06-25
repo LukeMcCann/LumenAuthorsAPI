@@ -1,5 +1,15 @@
 # Microservices
 
+# Requirements
+
+- Docker
+
+# To Run this project
+
+1. Download the associated Dev-Stack:
+    - [LEPR-DevStack](https://github.com/PlanetDebug/LEPR-Stack)
+2. Copy or clone this repository into the `src` folder.
+
 ## Project Steps
 
 1. Created Dockerfile for php - this enables the install and enable of specific tools: vi, pdo, xdebug
